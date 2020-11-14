@@ -17,11 +17,10 @@ from django.urls import path
 from main import views
 
 urlpatterns = [
-    path('welcome/', views.welcome),
-    path('overview/', views.overview),
-    path('findings/', views.findings),
-    path('conclusion', views.conclusion)
-
+    path('', views.index),
+    path('cdc/', views.cdc),
+    path('index/', views.index),
+    path('news/', views.news),
 
     # path('admin/', admin.site.urls),
 ]

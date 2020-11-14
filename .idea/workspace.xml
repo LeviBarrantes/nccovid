@@ -28,18 +28,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projectF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates/main" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF\main\templates\main" />
+      <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF\projectF" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF\main" />
       <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF" />
       <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF\projectF\projectF" />
-      <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF\projectF" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Users\Baby Logan\Documents\Homework\Group\projectF\projectF" />
     </key>
   </component>
@@ -78,7 +79,10 @@
       <workItem from="1603140879044" duration="41000" />
       <workItem from="1603140988667" duration="860000" />
       <workItem from="1603144841111" duration="555000" />
-      <workItem from="1603224628295" duration="2449000" />
+      <workItem from="1603224628295" duration="2758000" />
+      <workItem from="1603305270446" duration="42000" />
+      <workItem from="1605296667056" duration="596000" />
+      <workItem from="1605365847429" duration="3541000" />
     </task>
     <servers />
   </component>
@@ -94,9 +98,9 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1677" y="603" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1440@0.0.2560.1440" timestamp="1603226513464" />
-    <state x="1699" y="478" key="FileChooserDialogImpl" timestamp="1603224672316">
+    <state x="1699" y="478" key="FileChooserDialogImpl" timestamp="1605367353058">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1699" y="478" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1603224672316" />
+    <state x="1699" y="478" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1605367353058" />
   </component>
 </project>
