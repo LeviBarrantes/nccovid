@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('s_key', 'unsafe-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -71,15 +71,15 @@ WSGI_APPLICATION = 'nccovid19.wsgi.application'
 
 # Should we need a database we can easily link a Postgres Heroku Database using these pieces.
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd6gkvelr7g3hu9',
-#         'USER': 'bimjicgzyumbsi',
-#         'PASSWORD': '21da7eee62493818270d672c20963a83768b2441ec989e1e923283b21cb82086',
-#         'HOST': 'ec2-52-86-33-50.compute-1.amazonaws.com'
-#     }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'd9hf2vnnkno1c0',
+         'USER': 'ztftzchtplgtbt',
+         'PASSWORD': 'f61cd3a660dd493357496c1350bbda073764faf9d33e037ea5b7a33783075e9c',
+         'HOST': 'ec2-54-146-91-153.compute-1.amazonaws.com'
+     }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

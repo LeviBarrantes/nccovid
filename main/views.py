@@ -10,7 +10,7 @@ import requests
 def index(request):
 
     return render(request,
-                  template_name='main/index.html')
+                  template_name="main/index.html")
 
 
 # This function goes when someone wants to see some local news tidbits, and calls the corresponding html page.
@@ -25,13 +25,6 @@ def donate(request):
 
     return render(request,
                   template_name='main/donate.html')
-
-
-# We will use this page to bring up the legal aspects such as the educational license.
-def legal(request):
-
-    return render(request,
-                  template_name='main/legal.html')
 
 
 # This takes the zip from the user calls to a weather API to get the city, and temperature of that town if wanted.

@@ -22,7 +22,6 @@ urlpatterns = [
     path('nccovid/', views.index, name='home'),
     path('donate/', views.donate, name='donate'),
     path('news/', views.news, name='news'),
-    path('legal/', views.legal, name='legal'),
 
     # path('admin/', admin.site.urls),
 ]
