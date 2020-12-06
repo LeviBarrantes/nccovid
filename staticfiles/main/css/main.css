@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+
+.skip-nav:focus{
+   transform: none;
+}
+
+/*-------------------------------------------------------*/
+.toplogo {
+  width: 100%;
+  display: inline-block;
+  background-color:  #ffffff;
+}
+
+form.Zip {
+  width: 80%;
+  float: right;
+  padding-top: 25px;
+  padding-right: 10px;
+}
+
+form.Zip button {
+  float: right;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.Zip button:hover {
+  background: #0b7dda;
+}
+
+form.Zip input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 80%;
+  background: #f5f3f3;
+}
+
+form.Zip::after {
+  content: "";
+  clear: both;
+}
+/**************************************************************************/
+
+
+/* Style the search box inside the navigation bar */
+/* Nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 20px 0 70px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+  float: left;
+  position: relative;
+}
+
+.main-nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+  background-color: rgb(165, 162, 162);
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  padding-left: 52px;
+}
+
+
+
+/* map */
+.map {
+  width: 100%;
+  height: 400px;
+
+  background: url('..Testing.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.map h2, .map p {
+  margin-bottom: 10px;
+}
+
+.map .btn {
+  margin-top: 20px;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;;
+}
+
+/* covid */
+.covid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-bottom: 20px;
+  background-color: #f5f3f3;
+}
+
+.covid img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.covid h3 {
+  margin-bottom: 5px;
+}
+/*----------------------------------------------------------------*/
+
+.foot {
+  background-color: #333;
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+.foot .btns {
+  width: 50%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: right;
+}
+
+.foot .footerBtn {
+  background-color: #333;
+  border: none;
+  color: #ffffff;
+  padding: 15px 5px;
+  outline: none;
+}
+
+.foot .footerBtn:hover {
+  background-color: rgb(165, 162, 162);
+}
+
+/*copyright layout*/
+.foot .copyright{
+  float: left;
+  width: 50%;
+  color: white;
+  padding: 10px 10px;
+}
+
+/* Change the color of links on hover */
+.foot a:hover {
+  background-color: rgb(165, 162, 162);
+}
+
+/*----------------------------------------------------------------*/
+/* Donate Page - Donate Background Image*/
+
+.donatebackground {
+  width: 100%;
+  height: 500px;
+  background: url('..pg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.donatebackground .donatenow {
+  color: rgba(255, 255, 255, 0.817);
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 15px;
+  padding-right: 800px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.donatebackground .savelives {
+  color: rgba(255, 255, 255, 0.817);
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 100px;
+  margin-right: 800px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/* Donate Page - Donation Option Layout*/
+.donateOption {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: #f5f3f3;
+}
+
+.donateOption img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.donateOption h3 {
+  margin-bottom: 5px;
+}
+
+.donateOption a {
+  text-decoration: none;
+  color: rgb(62, 61, 61);
+}
+
+.donateOption a:hover{
+  color: rgb(188, 157, 220);
+}
+
+

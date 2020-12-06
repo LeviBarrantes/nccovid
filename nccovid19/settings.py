@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'projectF.urls'
+ROOT_URLCONF = 'nccovid19.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'projectF.wsgi.application'
+WSGI_APPLICATION = 'nccovid19.wsgi.application'
 
 
 # Should we need a database we can easily link a Postgres Heroku Database using these pieces.
