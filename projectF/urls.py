@@ -15,12 +15,17 @@ Including another URLconf
 """
 from django.urls import path
 from main import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('', views.index),
-    path('cdc/', views.cdc),
-    path('index/', views.index),
-    path('news/', views.news),
+    path('', views.index, name='index'),
+    path('nccovid/', views.index, name='home'),
+    path('donate/', views.donate, name='donate'),
+    path('news/', views.news, name='news'),
+    path('legal/', views.legal, name='legal'),
 
     # path('admin/', admin.site.urls),
 ]
+
+# Aids in uploading images from the static folder
+urlpatterns += staticfiles_urlpatterns()

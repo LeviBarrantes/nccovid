@@ -1,110 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../front-end/reset.css">
-    <link rel="stylesheet" href="../front-end/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <title>COVID-19</title>
-
-    <meta name="description" content= "The purpose of this covid 19 dashboard
-    is to help the NC community to stay update with latest numbers and news
-   ">
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/reset.css' %}"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>COVID-19 - Donate</title>
+  <meta name="description" content= "The purpose of this Covid-19 dashboard is to help  NC
+    community to stay up to date with latest numbers and news">
 </head>
-<body>
 
-<div class="toplogo">
-<img src="../Img/logo.png" alt="website logo" class="logo">
+<body onload="setMode()">
+  <a href="#main" class="skip-nav">Skip Navigation</a>
+  <div class="toplogo" id="topHeader">
+    <img src="../../static/main/img/logo.png" alt="website logo" class="logo">
 
-<form class="Zip" action="/action_page.php" style="margin:auto;max-width:300px">
-  <input type="text" placeholder="Search by Zipcode" name="search2">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
-</div>
+   <!-- <form class="Zip" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search by Zipcode" name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
 
-<nav class = "main-nav">
+  </div>
 
+  <nav class = "main-nav">
+    <ul class="main-menu">
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'news' %}">News</a></li>
+      <li><a>Donate</a></li>
+      <li><a href="https://www.cdc.gov/" target="_blank">CDC</a></li>
+    </ul>
+  </nav>
 
- <ul class="main-menu">
-    <li><a href="../">Home</a></li>
-    <li><a href="../CDC.html">CDC</a></li>
-    <li><a href="../LocalNews.html">Local News</a></li>
-    <li><a href="../donate">Donate Now!!</a></li>
- </ul>
-
-
-</ul>
-</nav>
-<!--place holder-->
-<div class="container">
-<header class="map">
-<h2>NC map</h2>
-<p>
-    Current statistics
-
-</p>
-
-    <a href="#" class="btn">NC COVID-19<i class="fas fa-chevron-right"></i>
-    </a>
+  <!--place holder-->
+  <div class="container">
+    <header class="donatebackground">
+      <p class="donatenow">
+        DONATE NOW
+      </p>
+      <p class="savelives">
+        SAVE LIVES
+      </p>
+      <!-- <a href="#" class="btn">DONATE NOW<i class="donatebtn"></i></a> -->
     </header>
+
     <!--Place holder-->
-    <section class="covid">
-        <div>
-          <img src="../Img/COVID-testing.jpg" alt="">
-          <h3>Testing locations (Covid-19)</h3>
-          <p>
-            Some text
-          </p>
+    <section class="donateOption" id="covidInfoTab">
+      <div>
+        <a href="https://covid19responsefund.org/en/" target="_blank">
+          <img src="../../static/main/img/who.png" alt="">
+        </a>
+        <!--<h3 id="covidText"> World Health Organization</h3>-->
+        <a href="https://covid19responsefund.org/en/" target="_blank">
+          <h3>
+            COVID-19 Solidarity Response Fund for WHO
+          </h3>
+        </a>
+        <p>
+          It’s never been more urgent to support the global response, led by the World
+          Health Organization (WHO).Donations support WHO’s work, including with partners,
+          to track and understand the spread of the virus; to ensure patients get the care
+          they need and frontline workers get essential supplies and information; and to
+          accelerate research and development of a vaccine and treatments for all who need them.
+        </p>
+      </div>
 
-        </div>
-        <div>
-          <img src="../Img/NEWS.jpg" alt="" />
-          <h3>Local News 3</h3>
-          <p>
-            Some text
-          </p>
+      <div>
+        <a href="https://www.redcrossblood.org/give.html/find-drive" target="_blank">
+          <img src="../../static/main/img/americanRedCross.jpeg" alt="" />
+        </a>
+        <!-- <h3 id="covidText">American Red Cross</h3> -->
+        <a href="https://www.redcrossblood.org/give.html/find-drive" target="_blank">
+          <h3>
+            American Red Cross
+          </h3>
+        </a>
+        <p id="covidText">
+          The American Red Cross has a constant and ongoing need for blood and platelet donations.
+          There is no known end date in this fight against coronavirus, and the Red Cross needs the
+          help of blood and platelet donors and blood drive hosts to meet the needs of patient care.
+          Please schedule your next donation appointment now to help prevent another blood shortage.
+        </p>
+      </div>
 
-        </div>
-        <div>
-          <img src="../Img/covid_up.jpg" alt="" />
+      <div>
+        <a href="https://give.salvationarmyusa.org/give/276832/#!/donation/checkout" target="_blank">
+          <img src="../../static/main/img/salvationArmy.jpg" alt="" />
+        </a>
+        <!-- <h3 id="covidText">The Salvation Army</h3> -->
+        <a href="https://give.salvationarmyusa.org/give/276832/#!/donation/checkout" target="_blank">
+          <h3>
+            The Salvation Army
+          </h3>
+        </a>
+        <p>
+          During this time of crisis, your generosity helps us safely shelter the most vulnerable,
+          serve first responders, feed the hungry, and provide other critical services. When you give,
+          your donation directly benefits people in need throughout your local community.
+        </p>
+      </div>
 
-          <h3>Chart</h3>
-          <p>
-               <canvas id="myChart" width="100" height="100"></canvas>
-           </p>
-     
+      <div>
+        <a href="https://secure.feedingamerica.org/site/Donation2;jsessionid=00000000.
+        app20126a?idb=1096493603&df_id=29151&29151.donation=form1&mfc_pref=T&NONCE_TOKEN=
+        E1E27C7CEA774F91EFB3502D75E335E5&s_channel=google&s_onsite_promo=MainNav_Donate&
+        s_subsrc=https://www.feedingamerica.org/about-us/press-room/feeding-america-
+        establishes-covid-19-response-fund-help-food-banks-during&s_src=W20BORGSC&29151_
+        donation=form1&s_referrer=google&_ga=2.209073106.119272393.1605933910-277661124.
+        1605933910" target="_blank">
+        <img src="../../static/main/img/feedingAmerica.jpg" alt="" />
+        </a>
+       <!-- <h3 id="covidText">Feeding America</h3>-->
+       <a href="https://secure.feedingamerica.org/site/Donation2;jsessionid=00000000.
+       app20126a?idb=1096493603&df_id=29151&29151.donation=form1&mfc_pref=T&NONCE_TOKEN=
+       E1E27C7CEA774F91EFB3502D75E335E5&s_channel=google&s_onsite_promo=MainNav_Donate&
+       s_subsrc=https://www.feedingamerica.org/about-us/press-room/feeding-america-
+       establishes-covid-19-response-fund-help-food-banks-during&s_src=W20BORGSC&29151_
+       donation=form1&s_referrer=google&_ga=2.209073106.119272393.1605933910-277661124.
+       1605933910" target="_blank">
+        <h3>
+          Feeding America
+        </h3>
+       </a>
+        <p id="covidText">
+          As the COVID-19 pandemic continues, we are committed to serving communities and
+          individuals facing hunger across America, wherever they are. Every dollar raised
+          from the COVID-19 response fund will be used to get food and funds to local food banks
+          across the U.S.
+        </p>
+      </div>
 
-        </div>
+      <div>
+        <a href="https://relief.nfl.com/" target="_blank">
+          <img src="../../static/main/img/nfl.jpeg" alt="" />
+        </a>
+        <!-- <h3 id="covidText">Save The Children</h3> -->
+        <a href="https://relief.nfl.com/" target="_blank">
+          <h3>
+            NFL PARTNERS' RELIEF EFFORTS
+          </h3>
+         </a>
+        <p id="covidText">
+          In this ongoing time of uncertainty, our communities and nation at large need
+          us to keep supporting each other. The NFL continues to work closely with our
+          partners to support those in need. Donate today and help provide relief to those
+          impacted most by the COVID-19 pandemic, from those suffering to the workers on
+          the front lines. Every donation is helpful, small or large.
+        </p>
+      </div>
 
-      </section>
+      <div>
+        <a href="https://app.mobilecause.com/vf/HELPCharMeck" target="_blank">
+          <img src="../../static/main/img/foundationCarolina.png" alt="" />
+        </a>
+        <!-- <h3 id="covidText">Team Rubicon</h3> -->
+        <a href="https://app.mobilecause.com/vf/HELPCharMeck" target="_blank">
+          <h3>
+            The COVID-19 Response Fund
+          </h3>
+         </a>
+        <p id="covidText">
+          In partnership with Mecklenburg County, the City of Charlotte, corporations,
+          houses of faith and others, the COVID-19 Response Fund helps those most in need
+          through support to nonprofit organizations.
+
+        </p>
+      </div>
+    </section>
+  </div>
 
 
 
-</div>
+  <footer class="foot">
+	  <div class="copyright">
+      <p><small>Copyright 2020, North Carolina Covid-19 Dashboard</small></p>
+    </div>
+      <div class="btns">
+        <button type="button" onclick="changeMode(this)" id="modeButton" class="footerBtn">Dark Mode</button>
+        <button type="button" id="accessibilityBtn" class="footerBtn">Accessibility</button>
+        <button type="button" id="legalBtn" class="footerBtn">Legal</button>
+      </div>
+  </footer>
 
-
-
-
-
-<a href="#main" class="skip-nav">Skip Navigation</a>
-
-
-
-
-
-
-
-
-
-        <footer>
-           <p>All rights reserved &copy; Team 8</p>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
-
-
+  <script src="../../static/main/js/style.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
