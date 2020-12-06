@@ -68,17 +68,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'nccovid19.wsgi.application'
 
-
 # Should we need a database we can easily link a Postgres Heroku Database using these pieces.
 
 DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'd9hf2vnnkno1c0',
-         'USER': 'ztftzchtplgtbt',
-         'PASSWORD': 'f61cd3a660dd493357496c1350bbda073764faf9d33e037ea5b7a33783075e9c',
-         'HOST': 'ec2-54-146-91-153.compute-1.amazonaws.com'
-     }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd9hf2vnnkno1c0',
+        'USER': 'ztftzchtplgtbt',
+        'PASSWORD': 'f61cd3a660dd493357496c1350bbda073764faf9d33e037ea5b7a33783075e9c',
+        'HOST': 'ec2-54-146-91-153.compute-1.amazonaws.com'
+    }
 }
 
 # Password validation
@@ -116,8 +115,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles'),)
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "/staticfiles"),)
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "/staticfiles"),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles'),
 
 import django_heroku
+
 django_heroku.settings(locals(), logging=False)
