@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03f21ff-e9c1-40d5-823d-b2fa7f71d0d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final.twb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nccovid19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nccovid19/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nccovid19/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nccovid19/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +53,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="s_key_db" value="'f61cd3a660dd493357496c1350bbda073764faf9d33e037ea5b7a33783075e9c'" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Logan\anaconda3\envs\projectF\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -120,7 +117,7 @@
       <workItem from="1607273854442" duration="2254000" />
       <workItem from="1607277798933" duration="518000" />
       <workItem from="1607278423604" duration="2763000" />
-      <workItem from="1607281257933" duration="2186000" />
+      <workItem from="1607281257933" duration="2278000" />
     </task>
     <servers />
   </component>
