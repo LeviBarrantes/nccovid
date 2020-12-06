@@ -1,7 +1,5 @@
 from django.http import JsonResponse
 from django.shortcuts import redirect, render
-from selenium import webdriver
-from bs4 import BeautifulSoup
 import requests
 
 
@@ -17,14 +15,14 @@ def index(request):
 def news(request):
 
     return render(request,
-                  template_name='main/news.html')
+                  template_name="main/news.html")
 
 
 # This function goes when someone wants to donate, and calls the corresponding html page.
 def donate(request):
 
     return render(request,
-                  template_name='main/donate.html')
+                  template_name="main/donate.html")
 
 
 # This takes the zip from the user calls to a weather API to get the city, and temperature of that town if wanted.
