@@ -7,6 +7,7 @@
     <list default="true" id="f03f21ff-e9c1-40d5-823d-b2fa7f71d0d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/nccovid19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nccovid19/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nccovid19/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nccovid19/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nccovid19" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="192be093-aa74-43c1-9298-815248c0e048" />
   <component name="ProjectId" id="1kkX1fEm8OqBcwRcLilrcnxzpnv" />
@@ -132,7 +133,7 @@
       <workItem from="1607277798933" duration="518000" />
       <workItem from="1607278423604" duration="2763000" />
       <workItem from="1607281257933" duration="2713000" />
-      <workItem from="1607284008943" duration="1286000" />
+      <workItem from="1607284008943" duration="1535000" />
     </task>
     <servers />
   </component>
