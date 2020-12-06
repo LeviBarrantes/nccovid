@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03f21ff-e9c1-40d5-823d-b2fa7f71d0d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nccovid19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nccovid19.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +17,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nccovid19" />
   </component>
   <component name="JupyterTrust" id="192be093-aa74-43c1-9298-815248c0e048" />
   <component name="ProjectId" id="1kkX1fEm8OqBcwRcLilrcnxzpnv" />
@@ -32,19 +36,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Users\Baby Logan\Desktop" />
-      <recent name="E:\Users\Baby Logan\Desktop\projectF\main\static\main" />
-      <recent name="E:\Users\Baby Logan\Desktop\projectF\main" />
-      <recent name="E:\Users\Baby Logan\Desktop\projectF" />
-      <recent name="E:\Users\Baby Logan\Desktop\projectF\static\img" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main\static\main" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\static\img" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="projectF" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="nccovid19" type="Python.DjangoServer" factoryName="Django server">
       <module name="nccovid19" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,6 +89,7 @@
       <workItem from="1607195011483" duration="3025000" />
       <workItem from="1607273854442" duration="2254000" />
       <workItem from="1607277798933" duration="518000" />
+      <workItem from="1607278423604" duration="486000" />
     </task>
     <servers />
   </component>
@@ -105,5 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/nccovid19/nccovid19" />
+    </ignored-roots>
   </component>
 </project>
