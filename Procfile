@@ -1,1 +1,1 @@
-web: gunicorn .wsgi --log-level debug
+web: gunicorn nccovid19.wsgi --log-level debug
