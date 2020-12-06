@@ -19,6 +19,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('/', views.index, name='index'),
     path('nccovid/', views.index, name='home'),
     path('donate/', views.donate, name='donate'),
     path('news/', views.news, name='news'),
