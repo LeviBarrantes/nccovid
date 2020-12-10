@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f03f21ff-e9c1-40d5-823d-b2fa7f71d0d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/static/main/img/COVID-testing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/main/img/doc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/main/img/saveTheChildren.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/legal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/searchbyzipcode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nccovid19/python.tgz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/img/kid.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/img/kid.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/js/covi19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/js/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/js/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/js/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/donate.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/donate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nccovid19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nccovid19/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nccovid19/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nccovid19/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +51,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nccovid19" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="JupyterTrust" id="192be093-aa74-43c1-9298-815248c0e048" />
   <component name="ProjectId" id="1kkX1fEm8OqBcwRcLilrcnxzpnv" />
@@ -42,20 +66,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Users\Baby Logan\Desktop" />
-      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main\static\main" />
-      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main" />
-      <recent name="E:\Users\Baby Logan\Desktop\nccovid19" />
-      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\static\img" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\nccovid19" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main\templates\main" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main\static\main\js" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main\static\main\css" />
+      <recent name="E:\Users\Baby Logan\Desktop\nccovid19\main\static\main\img" />
     </key>
   </component>
   <component name="RunManager" selected="Django tests.Test: ">
@@ -132,7 +158,11 @@
       <workItem from="1607277798933" duration="518000" />
       <workItem from="1607278423604" duration="2763000" />
       <workItem from="1607281257933" duration="2713000" />
-      <workItem from="1607284008943" duration="3527000" />
+      <workItem from="1607284008943" duration="3718000" />
+      <workItem from="1607303808594" duration="3239000" />
+      <workItem from="1607378740689" duration="12611000" />
+      <workItem from="1607440473589" duration="1309000" />
+      <workItem from="1607475543325" duration="18138000" />
     </task>
     <servers />
   </component>

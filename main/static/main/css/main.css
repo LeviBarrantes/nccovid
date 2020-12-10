@@ -4,31 +4,35 @@
   padding: 0;
 }
 
-
+/*-body wrapper--*/
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   font-size: 15px;
   line-height: 1.5;
 }
-
+/*---container for the main content area----*/
 .container {
   width: 90%;
   max-width: 1500px;
   margin: auto;
 }
 
-
+.skip-nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: var(--spacing-unit-small);
+  color:var(--button-color);
+  text-decoration:none ;
+  transform: translateY(-100%);
+}
 .skip-nav:focus{
    transform: none;
 }
 
-/*-------------------------------------------------------*/
-.toplogo {
-  width: 100%;
-  display: inline-block;
-  background-color:  #ffffff;
-}
+/*--------------Logo and search box layout-------------------------------------*/
+
 
 form.Zip {
   width: 80%;
@@ -40,7 +44,7 @@ form.Zip {
 form.Zip button {
   float: right;
   padding: 10px;
-  background: #2196F3;
+  background: #2196f3;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -52,7 +56,7 @@ form.Zip button:hover {
   background: #0b7dda;
 }
 
-form.Zip input[type=text] {
+form.Zip input[type="text"] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -75,9 +79,10 @@ form.Zip::after {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  font-size: 13px;
+  padding: 20px 0;
+  font-size: 16px;
   font-weight: bold;
-  padding: 20px 0 70px;
+  padding-bottom: 70px;
 }
 
 .main-nav ul {
@@ -90,7 +95,7 @@ form.Zip::after {
 }
 
 .main-nav ul li {
-  padding: 0 10px;
+  padding: 0px 10px;
   float: left;
   position: relative;
 }
@@ -113,13 +118,8 @@ form.Zip::after {
 }
 
 
-
-/* map */
+/* map layout area  */
 .map {
-  width: 100%;
-  height: 400px;
-
-  background: url('../../main/img/covidTesting.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,6 +127,11 @@ form.Zip::after {
   justify-content: flex-end;
   padding-bottom: 50px;
   margin-bottom: 20px;
+}
+
+.tableauPlaceholder{
+  width: 1500%;
+  height: 1000px;
 }
 
 .map h2, .map p {
@@ -147,6 +152,8 @@ form.Zip::after {
   font-size: 15px;;
 }
 
+
+
 /* covid */
 .covid {
   display: grid;
@@ -164,7 +171,33 @@ form.Zip::after {
 .covid h3 {
   margin-bottom: 5px;
 }
-/*----------------------------------------------------------------*/
+/*----------------News Layout---------------------------------------------------*/
+.news {
+  width: 1200px;
+  height:1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.covid{
+  width: 100%;
+  height: 1000px;
+  align-items: center;
+  text-align: center;
+}
+
+.news h2, .news p {
+  margin-bottom: 10px;
+}
+
+
+/*-----------------Footer layout and  buttons for darkmode and
+ terms--------------*/
 
 .foot {
   background-color: #333;
@@ -181,7 +214,7 @@ form.Zip::after {
   text-align: right;
 }
 
-.foot .footerBtn {
+.foot .footerBtn  {
   background-color: #333;
   border: none;
   color: #ffffff;
@@ -212,7 +245,35 @@ form.Zip::after {
 .donatebackground {
   width: 100%;
   height: 500px;
-  background: url('../../main/img/donateWallpaper.jpeg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.donatebackground .donatenow {
+  color: rgba(255, 255, 255, 0.817);
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 15px;
+  padding-right: 800px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.donatebackground .savelives {
+  color: rgba(255, 255, 255, 0.817);
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 100px;
+  margin-right: 800px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/* Donate Page - Donation Option Layout*/
+.donatebackground {
+  width: 100%;
+  height: 500px;
+  background: url('../img/kid.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,5 +325,86 @@ form.Zip::after {
 .donateOption a:hover{
   color: rgb(188, 157, 220);
 }
+/*----------------------------------------------*/
 
+/* Searchbyzipcode page CSS edits*/
 
+.pagelength {
+  margin-bottom: 32px;
+}
+
+.placeholderzip h2 {
+  position: absolute;
+  font-size: 22px;
+  top: 220px;
+  left: 380px;
+  display: inline;
+}
+
+form.searchbox {
+  position: absolute;
+  bottom: 500px;
+  left: 600px;
+  font-size: 18px;
+}
+
+form.searchbox button {
+  float: right;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.searchbox button:hover {
+  background: #0b7dda;
+}
+
+form.searchbox input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 80%;
+  background: #f5f3f3;
+}
+
+form.searchbox::after {
+  content: "";
+  clear: both;
+}
+
+.placeholderzip{
+  width: 1000px;
+  border: 15px solid rgb(186, 166, 115);
+  padding: 260px;
+  margin-left: 150px;
+  background-color: rgb(152, 189, 193);
+}
+
+.infoinsidebox h4{
+  position: absolute;
+  font-size: 18px;
+  top: 450px;
+  left: 270px;
+  display: inline;
+}
+
+.infoinsidebox p{
+  position: absolute;
+  font-size: 15px;
+  top: 525px;
+  left: 270px;
+  display: inline;
+}
+
+.docimage{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 250px;
+  left: 300px;
+}

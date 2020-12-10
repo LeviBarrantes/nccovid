@@ -3,45 +3,49 @@
 
 <head>
 
-
+    {# Load Static Files and Viewport #}
+    {% load static %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../front-end/reset.css">
-  <link rel="stylesheet" href="../front-end/main.css">
+
+    {# Load Stylesheets #}
+  <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+
+    {# Title and Description #}
   <title>Terms and Conditions</title>
 
   <meta name="description" content="The purpose of this covid 19 dashboard is to help the NC community to stay update with
     latest numbers and news">
+
 </head>
 
 <body>
-  <a href="#main" class="skip-nav">Skip Navigation</a>
 
-  <div class="toplogo">
-    <img src="../Img/logo.png" alt="website logo" class="logo">
-    <!--
-    <form class="Zip" action="/action_page.php" style="margin:auto;max-width:300px">
-      <input type="text" placeholder="Search" name="search2">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  -->
+{# Skip Navigation #}
+  <a class="skip-nav">Skip Navigation</a>
+
+  {# Logo #}
+  <div class="topLogo">
+    <img src="../../static/main/img/logo.png" alt="website logo" class="logo">
+
   </div>
 
+{# Navigation #}
   <nav class="main-nav">
-
-
     <ul class="main-menu">
-      <li><a href="./Index.html">Home</a></li>
-      <li><a href="./CDC.html">CDC</a></li>
-      <li><a href="./searchbyzipcode.html">Search By Zipcode</a></li>
-      <li><a href="./LocalNews.html">News</a></li>
-      <li><a href="./donate.html">Donate</a></li>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="https://www.cdc.gov/">CDC</a></li>
+      <li><a href="{% url 'searchbyzipcode' %}">Search By Zipcode</a></li>
+      <li><a href="{% url 'news' %}">News</a></li>
+      <li><a href="{% url 'donate' %}">Donate</a></li>
     </ul>
   </nav>
-  <!--place holder-->
+
+  {# Legal Mumbo Jumbo #}
   <div class="container">
 
   <h2><strong>Terms and Conditions</strong></h2>
@@ -225,20 +229,20 @@
 
   </div>
 
+{# Footer #}
+<div class="copyright">
+  <p><small>Copyright 2020, North Carolina Covid-19 Dashboard</small></p>
+</div>
 
-  <footer class="foot">
-	  <div class="copyright">
-      <p><small>Copyright 2020, North Carolina Covid-19 Dashboard</small></p>
-    </div>
-      <div class="btns">
-        <button href="./legal.html" type="button" id="legalBtn" class="footerBtn" onclick="window.location.href='./legal.html'">
-          Terms
-        </button>
-      </div>
-  </footer>
+{#   Dark Mode and Legal  #}
+<div class="btns">
+<button type="button" onclick="changeMode(this)" id="modeButton" class="footerBtn">Dark Mode</button>
+<button button href="./legal.html" type="button" id="legalBtn" class="footerBtn"  onclick="window.location.href='./legal.html'" >Terms</button>
+</div>
+</footer>
 
+  {# Style Scripts #}
+  <script src="../../static/main/js/style.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 </body>
 </html>

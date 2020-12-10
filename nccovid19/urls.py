@@ -18,11 +18,16 @@ from main import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
+
+    # Adding Urls... url, function on views.py, name for static lookup
+
     path('', views.index, name='index'),
-    path('/', views.index, name='index'),
     path('nccovid/', views.index, name='home'),
     path('donate/', views.donate, name='donate'),
     path('news/', views.news, name='news'),
+    path('searchbyzipcode/', views.searchbyzipcode, name='searchbyzipcode'),
+    path('legal/', views.legal, name='legal'),
+    path('get_news_data/', views.get_news_data, name='get_news_data'),
 
     # path('admin/', admin.site.urls),
 ]

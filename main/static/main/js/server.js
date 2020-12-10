@@ -17,7 +17,7 @@ app.use('/',express.static('../public'));
 
 
 app.get('/', (request, response) => {
-    response.sendFile(path.join(__dirname, '../Covid-19/COVID_Fontend_files/front-end/Index.html'));
+    response.sendFile(path.join(__dirname, '../../static/main/img/index.html'));
 });
 
 app.listen(port, () => {

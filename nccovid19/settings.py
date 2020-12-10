@@ -22,12 +22,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('s_key', 'unsafe-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# Don't Turn this off until absolute final deployment though #
+# This gives the error codes to debug online when on the server #
 DEBUG = True
 
+# Will change. Security Issue.
 ALLOWED_HOSTS = ['*']
 
 # Application definition
-
+# App started must be listing e.g. 'main' #
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -68,8 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'nccovid19.wsgi.application'
 
-# Should we need a database we can easily link a Postgres Heroku Database using these pieces.
-
+# Heroku Postgres Database Authentication Information.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -82,7 +84,6 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -98,6 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Code for slightly better logging from Heroku
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -153,9 +155,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+#   The STATIC_URL is the name when starting to look for static files. {% static %}  #
 STATIC_URL = '/static/'
+
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, "/staticfiles"),)
+
+# Compiling static files for deployment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles'),
 
+# Having the deployment platform understand our django settings.
 import django_heroku
-django_heroku.settings(config=locals(), staticfiles=False,logging=False)
+
+django_heroku.settings(config=locals(), logging=False)

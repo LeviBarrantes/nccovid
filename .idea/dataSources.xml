@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Django default" uuid="ef2cf8e1-f45d-473c-8f00-83def8acd7de">
+    <data-source source="LOCAL" name="d9hf2vnnkno1c0" uuid="d8e069d8-1112-4731-a9c5-2b3f31aa103c">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/nccovid19/settings.py</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-54-146-91-153.compute-1.amazonaws.com:5432/d9hf2vnnkno1c0</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
