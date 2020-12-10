@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../front-end/reset.css">
+  <link rel="stylesheet" href="../front-end/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>COVID-19 - Search By Zipcode</title>
+  <meta name="description" content= "The purpose of this Covid-19 dashboard is to help  NC
+    community to stay up to date with latest numbers and news">
+</head>
+
+<body onload="setMode()">
+  <a href="#main" class="skip-nav">Skip Navigation</a>
+  <div class="toplogo" id="topHeader">
+    <img src="../Img/logo.png" alt="website logo" class="logo">
+    <!--
+    <form class="Zip" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search" name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    -->
+  </div>
+
+  <nav class = "main-nav">
+    <ul class="main-menu">
+      <li><a href="./Index.html">Home</a></li>
+      <li><a href="https://www.cdc.gov/" target="_blank">CDC</a></li>
+      <li><a href="./searchbyzipcode.html">Search By Zipcode</a></li>
+      <li><a href="./news.html">News</a></li>
+      <li><a href="./donate.html">Donate</a></li>
+    </ul>
+  </nav>
+  <!--place holder-->
+  <div class="container">
+
+
+    <!--Place holder-->
+    <section class="pagelength" id="covidInfoTab">
+
+      <div class="placeholderzip">
+        <h2>
+          Search for nearby Testing Sites, News and Covid-19 Statistics.
+        </h2>
+        <form class="searchbox" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input type="text" placeholder="Enter Your Zipcode" name="search2">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <img src="../Img/doc.png" alt="doc avatar" class="docimage">
+        <div class="infoinsidebox">
+          <h4>Anyone with symptoms of COVID-19, such as fever, cough or shortness of breath, or anyone who
+            has <br> been exposed to someone with COVID-19 should self-isolate and talk to a health care
+            professional.
+          </h4>
+          <p>
+              1) If you are experiencing symptoms of COVID-19 contact your health care provider or telehealth
+              program to discuss whether you <br> should be evaluated for testing. <br>
+              2) Call the test site before you go to learn about testing criteria, availability, hours and
+              location. Not all health care providers provide <br> testing on-site. Some require an appointment
+              and/or referral from a health care provider. Locations are subject to change. <br>
+              3) Each COVID-19 test provider will determine if testing is appropriate based on your symptoms,
+              risk factors and test availability.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="foot">
+	  <div class="copyright">
+      <p><small>Copyright 2020, North Carolina Covid-19 Dashboard</small></p>
+    </div>
+      <div class="btns">
+        <button type="button" onclick="changeMode(this)" id="modeButton" class="footerBtn">Dark Mode</button>
+        <button href="./legal.html" type="button" id="legalBtn" class="footerBtn" onclick="window.location.href='./legal.html'">
+          Terms
+        </button>
+      </div>
+  </footer>
+
+  <script src="style.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
